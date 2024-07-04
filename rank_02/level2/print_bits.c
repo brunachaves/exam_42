@@ -45,7 +45,8 @@ void	print_bits(unsigned char octet)
     write(1, result, 8);
 }
 
-/* int main(){
+/* int main()
+{
     unsigned char c = 5;
     print_bits(c);
 } */
