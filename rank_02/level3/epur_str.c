@@ -47,10 +47,10 @@ void epur_str(char *str)
             write(1, str, 1);
             str++;
         }
-        if (is_space(*str))
-            write (1, " ", 1);
         while (is_space(*str))
             str++;
+        if(!is_space(*str) && *str)
+            write (1, " ", 1);
     }
 }
 
