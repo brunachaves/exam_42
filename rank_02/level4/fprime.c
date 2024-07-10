@@ -60,7 +60,7 @@ int find_next_prime(int num)
     int next_prime = num + 1;
     if(is_prime(next_prime))
         return(next_prime);
-    find_next_prime(next_prime);
+    return(find_next_prime(next_prime));
 }
 
 void fprime(char *str)
